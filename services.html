@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nana Yhaaa's Beauty Oasis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background-color: pink;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-container {
+      width: 80px;
+      height: 80px;
+      border: 4px solid white;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: rotate 15s linear infinite;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .brand-text h1 {
+      margin: 0;
+      font-size: 20px;
+      color: #d63384;
+      font-weight: bold;
+    }
+
+    .brand-text p {
+      margin: 0;
+      font-size: 14px;
+      color: #a8326f;
+      font-style: italic;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* SECTION */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #d63384;
+    }
+
+    /* Services container */
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .service {
+      max-width: 250px;
+      text-align: center;
+    }
+
+    /* Circular slideshow */
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid pink;
+      position: relative;
+      margin: auto;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .circle img.active {
+      opacity: 1;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+    }
+
+    .read-more:hover {
+      background-color: #d63384;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #ffc0cb;
+      padding: 30px 20px;
+      text-align: center;
+      color: #444;
+      margin-top: 40px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin: 0 8px;
+    }
+
+    .rights {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <div class="logo-container">
+        <img src="logo.jpg" alt="Logo">
+      </div>
+      <div class="brand-text">
+        <h1>Nana Yhaaa’s Beauty Oasis</h1>
+        <p>Your Beauty, Our Passion</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- SERVICES CONTENT -->
+  <section>
+    <h2>Our Services</h2>
+    <p>Explore our range of premium beauty and wellness treatments, each designed to refresh, relax, and redefine your glow.</p>
+
+    <div class="services-container">
+
+      <!-- Service 1: Facial Treatments -->
+      <div class="service">
+        <div class="circle">
+          <img src="facial1.jpg" class="active">
+          <img src="facial2.jpg">
+          <img src="facial3.jpg">
+        </div>
+        <h3>Facial Treatments</h3>
+        <p class="caption">Revitalize your skin with our advanced facial therapies designed to cleanse, hydrate, and rejuvenate. Our treatments target specific skin concerns, from acne and pigmentation to anti-aging solutions, leaving your face radiant and refreshed. Experience the ultimate glow tailored to your unique skin needs.</p>
+        <a href="facial.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- Service 2: Body Massage -->
+      <div class="service">
+        <div class="circle">
+          <img src="massage1.jpg" class="active">
+          <img src="massage2.jpg">
+          <img src="massage3.jpg">
+        </div>
+        <h3>Body Massage</h3>
+        <p class="caption">Relax and unwind with our therapeutic body massages crafted to relieve tension, improve circulation, and promote deep relaxation. Whether you need a soothing Swedish massage or a revitalizing deep-tissue session, we help restore balance to both body and mind. Walk away feeling renewed, recharged, and stress-free.</p>
+        <a href="massage.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- Service 3: Makeup Artistry -->
+      <div class="service">
+        <div class="circle">
+          <img src="makeup1.jpg" class="active">
+          <img src="makeup2.jpg">
+          <img src="makeup3.jpg">
+        </div>
+        <h3>Makeup Artistry</h3>
+        <p class="caption">Elevate your beauty with our professional makeup services, perfect for weddings, photoshoots, and special events. Our artists blend creativity and technique to highlight your best features while matching your desired style—be it natural, bold, or glamorous. Let us bring your dream look to life.</p>
+        <a href="makeup.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- Service 4: Body Scrub & Exfoliation -->
+      <div class="service">
+        <div class="circle">
+          <img src="scrub1.jpg" class="active">
+          <img src="scrub2.jpg">
+          <img src="scrub3.jpg">
+        </div>
+        <h3>Body Scrub & Exfoliation</h3>
+        <p class="caption">Reveal smoother, healthier skin through our luxurious exfoliation treatments. Our body scrubs gently remove dead cells, boost circulation, and nourish your skin with rich natural oils. Leave with a silky-soft finish and a radiant glow that lasts.</p>
+        <a href="scrub.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- Service 5: Nail & Hand Care -->
+      <div class="service">
+        <div class="circle">
+          <img src="nail1.jpg" class="active">
+          <img src="nail2.jpg">
+          <img src="nail3.jpg">
+        </div>
+        <h3>Nail & Hand Care</h3>
+        <p class="caption">Indulge in expert manicures and pedicures designed to pamper your hands and feet. From classic polish to gel finishes, our treatments ensure strong, healthy nails and flawlessly smooth skin. Treat yourself to a refreshing touch of elegance.</p>
+        <a href="nail.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- Service 6: Hair Styling & Treatment -->
+      <div class="service">
+        <div class="circle">
+          <img src="hair1.jpg" class="active">
+          <img src="hair2.jpg">
+          <img src="hair3.jpg">
+        </div>
+        <h3>Hair Styling & Treatment</h3>
+        <p class="caption">Transform your look with our personalized hair care services, from precision cuts and vibrant coloring to nourishing treatments. Whether you’re preparing for a special occasion or simply refreshing your style, our professionals deliver shine, volume, and lasting beauty tailored to you.</p>
+        <a href="hair.html" class="read-more">Read More</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Email: boatengsandra312@gmail.com | Phone: 0509775195 | Location: Afariwa Official Town</p>
+    <div class="social-icons">
+      <a href="https://wa.me/233509775195"><img src="whatsapp.jpg" alt="WhatsApp"></a>
+      <a href="https://facebook.com"><img src="facebook.jpg" alt="Facebook"></a>
+      <a href="https://tiktok.com/@yhaa_animah"><img src="tiktok.jpg" alt="TikTok"></a>
+      <a href="https://twitter.com/add/animahsedinam"><img src="twitter.jpg" alt="Twitter"></a>
+    </div>
+    <div class="rights">© 2025 Nana Yhaaa’s Beauty Oasis. All rights reserved.</div>
+  </footer>
+
+  <!-- SLIDESHOW SCRIPT -->
+  <script>
+    const circles = document.querySelectorAll('.circle');
+
+    circles.forEach(circle => {
+      const images = circle.querySelectorAll('img');
+      let index = 0;
+
+      setInterval(() => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+      }, 5000); // 5 seconds per slide
+    });
+  </script>
+
+</body>
+</html>

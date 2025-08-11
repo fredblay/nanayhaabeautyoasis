@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Nana Yhaaa's Beauty Oasis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    header {
+      background-color: pink;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-container {
+      width: 80px;
+      height: 80px;
+      border: 4px solid white;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: rotate 15s linear infinite;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .business-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #d63384;
+    }
+
+    .slogan {
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #d63384;
+    }
+
+    /* Blog container */
+    .blog-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .blog-post {
+      max-width: 250px;
+      text-align: center;
+    }
+
+    /* Circular slideshow */
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid pink;
+      position: relative;
+      margin: auto;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .circle img.active {
+      opacity: 1;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+    }
+
+    .read-more:hover {
+      background-color: #d63384;
+    }
+
+    footer {
+      background-color: #ffc0cb;
+      padding: 30px 20px;
+      text-align: center;
+      color: #444;
+      margin-top: 40px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin: 0 8px;
+    }
+
+    .rights {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <div class="logo-container">
+        <img src="logo.jpg" alt="Logo">
+      </div>
+      <div>
+        <div class="business-name">Nana Yhaaa's Beauty Oasis</div>
+        <div class="slogan">Your Beauty, Our Passion</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- BLOG CONTENT -->
+  <section>
+    <h2>Our Blog</h2>
+    <p>Stay inspired with expert tips, trends, and beauty secrets to keep you glowing every day.</p>
+
+    <div class="blog-container">
+
+      <!-- Blog Post 1 -->
+      <div class="blog-post">
+        <div class="circle">
+          <img src="blog1-1.jpg" class="active">
+          <img src="blog1-2.jpg">
+          <img src="blog1-3.jpg">
+        </div>
+        <h3>Top Skincare Trends in 2025</h3>
+        <p class="caption">From advanced hydration treatments to eco-friendly beauty products, discover the latest trends shaping the skincare world. Learn how to integrate these innovations into your routine for healthier, more radiant skin.</p>
+        <a href="blog1.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="blog-post">
+        <div class="circle">
+          <img src="blog2-1.jpg" class="active">
+          <img src="blog2-2.jpg">
+          <img src="blog2-3.jpg">
+        </div>
+        <h3>Mastering the Perfect Makeup Look</h3>
+        <p class="caption">Whether you prefer natural elegance or bold glamour, our experts break down essential techniques and product picks. Elevate your artistry and bring your dream look to life with ease.</p>
+        <a href="blog2.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="blog-post">
+        <div class="circle">
+          <img src="blog3-1.jpg" class="active">
+          <img src="blog3-2.jpg">
+          <img src="blog3-3.jpg">
+        </div>
+        <h3>Self-Care Rituals for Radiance</h3>
+        <p class="caption">Explore holistic self-care practices that rejuvenate the body and calm the mind. From spa-inspired treatments to mindful routines, unlock the secret to lasting beauty and inner balance.</p>
+        <a href="blog3.html" class="read-more">Read More</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Email: boatengsandra312@gmail.com | Phone: 0509775195 | Location: Afariwa Official Town</p>
+    <div class="social-icons">
+      <a href="https://wa.me/233509775195"><img src="whatsapp.jpg" alt="WhatsApp"></a>
+      <a href="https://facebook.com"><img src="facebook.jpg" alt="Facebook"></a>
+      <a href="https://tiktok.com/@yhaa_animah"><img src="tiktok.jpg" alt="TikTok"></a>
+      <a href="https://twitter.com/add/animahsedinam"><img src="twitter.jpg" alt="twitter"></a>
+    </div>
+    <div class="rights">© 2025 Nana Yhaaa’s Beauty Oasis. All rights reserved.</div>
+  </footer>
+
+  <!-- SLIDESHOW SCRIPT -->
+  <script>
+    const circles = document.querySelectorAll('.circle');
+
+    circles.forEach(circle => {
+      const images = circle.querySelectorAll('img');
+      let index = 0;
+
+      setInterval(() => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+      }, 5000); // 5 seconds per slide
+    });
+  </script>
+
+</body>
+</html>
